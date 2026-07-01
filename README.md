@@ -1,5 +1,7 @@
 # redox-w-832
 
+English | [简体中文](README.zh-CN.md)
+
 Redox Wireless Keyboard firmware port for Nordic nRF52832-QFAA.
 
 This repository ports the original Redox Wireless Keyboard nRF51822/nRF51 firmware to nRF52832/nRF52 while keeping the original architecture:
