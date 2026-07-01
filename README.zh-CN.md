@@ -1,4 +1,4 @@
-# redox-w-832
+# redox-w-firmware for nrf52832
 
 [English](README.md) | 简体中文
 
