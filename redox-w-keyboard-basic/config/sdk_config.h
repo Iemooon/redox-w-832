@@ -1,0 +1,108 @@
+#ifndef SDK_CONFIG_H
+#define SDK_CONFIG_H
+
+#include <stdbool.h>
+
+#ifndef NRF_LOG_ENABLED
+#define NRF_LOG_ENABLED 0
+#endif
+#ifndef NRF_LOG_DEFAULT_LEVEL
+#define NRF_LOG_DEFAULT_LEVEL 0
+#endif
+#ifndef NRF_LOG_DEFERRED
+#define NRF_LOG_DEFERRED 0
+#endif
+#ifndef NRF_FPRINTF_ENABLED
+#define NRF_FPRINTF_ENABLED 0
+#endif
+#ifndef NRF_STRERROR_ENABLED
+#define NRF_STRERROR_ENABLED 0
+#endif
+
+#ifndef PERIPHERAL_RESOURCE_SHARING_ENABLED
+#define PERIPHERAL_RESOURCE_SHARING_ENABLED 0
+#endif
+#ifndef NRFX_POWER_ENABLED
+#define NRFX_POWER_ENABLED 0
+#endif
+
+/* CLOCK: legacy nrf_drv_clock over SDK17 nrfx_clock. */
+#ifndef CLOCK_ENABLED
+#define CLOCK_ENABLED 1
+#endif
+#ifndef NRF_CLOCK_ENABLED
+#define NRF_CLOCK_ENABLED 1
+#endif
+#ifndef NRFX_CLOCK_ENABLED
+#define NRFX_CLOCK_ENABLED 1
+#endif
+#ifndef CLOCK_CONFIG_LF_SRC
+#define CLOCK_CONFIG_LF_SRC 1
+#endif
+#ifndef NRFX_CLOCK_CONFIG_LF_SRC
+#define NRFX_CLOCK_CONFIG_LF_SRC 1
+#endif
+#ifndef CLOCK_CONFIG_IRQ_PRIORITY
+#define CLOCK_CONFIG_IRQ_PRIORITY 7
+#endif
+#ifndef NRFX_CLOCK_CONFIG_IRQ_PRIORITY
+#define NRFX_CLOCK_CONFIG_IRQ_PRIORITY 7
+#endif
+#ifndef NRFX_CLOCK_CONFIG_LOG_ENABLED
+#define NRFX_CLOCK_CONFIG_LOG_ENABLED 0
+#endif
+
+/* RTC1 is used by the keyboard scan tick. */
+#ifndef RTC_ENABLED
+#define RTC_ENABLED 1
+#endif
+#ifndef NRF_DRV_RTC_ENABLED
+#define NRF_DRV_RTC_ENABLED 1
+#endif
+#ifndef NRFX_RTC_ENABLED
+#define NRFX_RTC_ENABLED 1
+#endif
+#ifndef RTC0_ENABLED
+#define RTC0_ENABLED 0
+#endif
+#ifndef RTC1_ENABLED
+#define RTC1_ENABLED 1
+#endif
+#ifndef RTC2_ENABLED
+#define RTC2_ENABLED 0
+#endif
+#ifndef NRFX_RTC0_ENABLED
+#define NRFX_RTC0_ENABLED 0
+#endif
+#ifndef NRFX_RTC1_ENABLED
+#define NRFX_RTC1_ENABLED 1
+#endif
+#ifndef NRFX_RTC2_ENABLED
+#define NRFX_RTC2_ENABLED 0
+#endif
+#ifndef RTC1_CONFIG_FREQUENCY
+#define RTC1_CONFIG_FREQUENCY 1000
+#endif
+#ifndef RTC1_CONFIG_IRQ_PRIORITY
+#define RTC1_CONFIG_IRQ_PRIORITY 7
+#endif
+#ifndef RTC1_CONFIG_RELIABLE
+#define RTC1_CONFIG_RELIABLE false
+#endif
+#ifndef RTC1_INSTANCE_INDEX
+#define RTC1_INSTANCE_INDEX 0
+#endif
+#ifndef NRFX_RTC_DEFAULT_CONFIG_FREQUENCY
+#define NRFX_RTC_DEFAULT_CONFIG_FREQUENCY 32768
+#endif
+#ifndef NRFX_RTC_DEFAULT_CONFIG_IRQ_PRIORITY
+#define NRFX_RTC_DEFAULT_CONFIG_IRQ_PRIORITY 7
+#endif
+#ifndef NRFX_RTC_DEFAULT_CONFIG_RELIABLE
+#define NRFX_RTC_DEFAULT_CONFIG_RELIABLE 0
+#endif
+#ifndef NRFX_RTC_CONFIG_LOG_ENABLED
+#define NRFX_RTC_CONFIG_LOG_ENABLED 0
+#endif
+
+#endif /* SDK_CONFIG_H */

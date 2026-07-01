@@ -1,0 +1,21 @@
+# Build outputs
+_build/
+*.o
+*.d
+*.elf
+*.hex
+!precompiled/*.hex
+*.bin
+*.map
+*.lst
+*.out
+
+# Local toolchain / SDK copies
+/toolchains/
+/nRF5_SDK_*/
+/gcc-arm-none-eabi-*/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
